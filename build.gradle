@@ -1,0 +1,29 @@
+plugins {
+	id "org.springframework.boot" version "2.4.2"
+	id 'java'
+	id 'maven-publish'
+}
+
+group = 'com.mdsdanny'
+version = '1.0.0'
+sourceCompatibility = '1.12'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	maven {
+		url 'https://repo.spring.io/libs-milestone'
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.4.2'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest:2.4.2'
+	implementation 'com.google.code.gson:gson:2.8.6'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.2.4.RELEASE'
+	implementation 'com.mdsdanny:config-access-commons:1.0.0'
+}
+
+test {
+	useJUnitPlatform()
+}
