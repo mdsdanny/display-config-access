@@ -1,5 +1,14 @@
 version: 0.0
 os: linux
-files:
-  - source: /
-    destination: /var/www/html/display-config-access
+hooks:
+  ApplicationStop:
+    - location: scripts/stop
+      timeout: 900
+  BeforeInstall:
+    - location: scripts/dependencies.sh
+      timeout: 900
+  ApplicationStart:
+    - location: scripts/start.sh
+      timeout: 900
+  ValidateService:
+    - location: scripts/health_check.sh
