@@ -1,1 +1,1 @@
-kill $(sudo lsof -t -i:8080)
+fuser -n tcp -k 8080

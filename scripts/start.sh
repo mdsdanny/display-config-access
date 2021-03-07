@@ -9,4 +9,4 @@ else
 fi
 cp /home/ubuntu/display-config-access/build/libs/display-config-access-1.0.0.jar /home/ubuntu/jars
 cd /home/ubuntu/jars
-java -jar display-config-access-1.0.0.jar
+java -jar display-config-access-1.0.0.jar &
