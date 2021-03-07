@@ -1,7 +1,0 @@
-version: 0.1
-
-phases:
-  build:
-    commands:
-      - echo Build completed on `date`
-      - ./gradlew clean build

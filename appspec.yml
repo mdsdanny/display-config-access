@@ -1,5 +1,8 @@
 version: 0.0
-os: linux
+os: ubuntu
+files:
+  - source: /home/ubuntu/display-config-access/build/libs/display-config-access-1.0.0.jar
+    destination: /home/ubuntu/jars/
 hooks:
   ApplicationStop:
     - location: scripts/stop
