@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="TemplateDataLanguageMappings">
-    <file url="file:///usr/local/bin/prettier" dialect="Shell Script" />
-    <file url="PROJECT" dialect="Shell Script" />
-  </component>
-</project>
